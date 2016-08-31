@@ -61,5 +61,9 @@
     // methods
     abstract public bool EliminateNextSoldier();
 
-    abstract public void EliminateAll();
+    public void EliminateAll()
+    {
+        while (this.EliminateNextSoldier())
+            ;
+    }
 }

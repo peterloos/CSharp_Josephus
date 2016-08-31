@@ -47,12 +47,6 @@ class JosephusLinkedListImpl : Josephus
         return true;
     }
 
-    public override void EliminateAll()
-    {
-        while (EliminateNextSoldier())
-            ;
-    }
-
     // overrides
     public override String ToString()
     {

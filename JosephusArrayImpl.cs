@@ -2,8 +2,8 @@
 
 class JosephusArrayImpl : Josephus
 {
-    private bool[] soldiers;      // root of soldiers
-    private int current;          // current soldier
+    private bool[] soldiers;   // root of soldiers
+    private int current;       // current soldier
 
     // c'tors
     public JosephusArrayImpl() : this(41)
@@ -52,18 +52,12 @@ class JosephusArrayImpl : Josephus
 
         this.MoveToNextAliveSoldier();
 
-        // kill 'n'.th soldier
+        // eliminate 'n'.th soldier
         this.soldiers[this.current] = false;
         this.alive--;
         this.lastEliminated = this.current + 1;
 
         return true;
-    }
-
-    public override void EliminateAll()
-    {
-        while (EliminateNextSoldier())
-            ;
     }
 
     // overrides
