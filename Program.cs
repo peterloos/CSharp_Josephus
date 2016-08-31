@@ -58,7 +58,7 @@ class Program
         while (j.Alive > 1)
         {
             j.EliminateNextSoldier();
-            Console.WriteLine("Removed {0,2}    ", j.LastEliminated);
+            Console.WriteLine("Removed {0,2}", j.LastEliminated);
         }
 
         Console.WriteLine();
